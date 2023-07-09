@@ -282,3 +282,52 @@ label, input[type="submit"] {
 .dropdown:hover .dropbtn {background-color: rgba(0, 0, 0, 0.644);}
 
 
+
+/* Media queries for laptops and desktops */
+@media (min-width: 768px) {
+  /* Align navbar items for laptops and desktops */
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Adjust logohead margin for laptops and desktops */
+  .logohead {
+    margin-top: 0;
+  }
+
+  /* Adjust search form for laptops and desktops */
+  .search-form {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Adjust cart icon for laptops and desktops */
+  .cart-icon {
+    margin-bottom: 0;
+  }
+
+  /* Adjust profile icon for laptops and desktops */
+  .profile-icon {
+    margin-bottom: 0;
+  }
+
+  /* Center align navigation items for laptops and desktops */
+  .nav-items ul {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Reset cart-items-container alignment for laptops and desktops */
+  .cart-items-container {
+    margin: 0 auto;
+  }
+
+  /* Reset footer alignment for laptops and desktops */
+  .footer {
+    margin: 0 auto;
+  }
+}
+
+
+
