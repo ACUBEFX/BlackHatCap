@@ -12,7 +12,7 @@
     <header>
         <div class="header-container">
             <div class="logohead">
-                <a href="homepage.html"><img src="logo/logp.jpeg" alt="Logo"> </a>
+                <a href="homepage.html"><img src="logo/logo.jpeg" alt="Logo"> </a>
             </div>
             <form action="#" method="get" class="search-form">
                 <input type="text" id="search-input" placeholder="Search" />
@@ -351,68 +351,6 @@
         </footer>
 </body>
 <script>
-
-
-    // Check if the device width is less than or equal to 767 pixels
-function isMobileDevice() {
-    return window.innerWidth <= 767;
-}
-
-// Apply the necessary changes when the page is loaded or resized
-function applyMobileStyles() {
-    if (isMobileDevice()) {
-        // Align navbar items for mobile devices
-        document.querySelector('.navbar').style.flexDirection = 'column';
-        document.querySelector('.navbar').style.alignItems = 'center';
-
-        // Adjust logohead margin for mobile devices
-        document.querySelector('.logohead').style.marginTop = '10px';
-
-        // Adjust search form for mobile devices
-        document.querySelector('.search-form').style.marginTop = '10px';
-        document.querySelector('.search-form').style.marginBottom = '10px';
-
-        // Adjust cart icon for mobile devices
-        document.querySelector('.cart-icon').style.marginBottom = '10px';
-
-        // Adjust profile icon for mobile devices
-        document.querySelector('.profile-icon').style.marginBottom = '10px';
-
-        // Center align navigation items for mobile devices
-        document.querySelector('.nav-items ul').style.flexDirection = 'column';
-        document.querySelector('.nav-items ul').style.alignItems = 'center';
-
-        // Adjust cart-items-container for mobile devices
-        document.querySelector('.cart-items-container').style.margin = '0';
-
-        // Adjust footer for mobile devices
-        document.querySelector('.footer').style.margin = '0';
-    } else {
-        // Reset styles for desktop and laptop devices
-        document.querySelector('.navbar').style.flexDirection = 'row';
-        document.querySelector('.navbar').style.alignItems = 'center';
-        document.querySelector('.logohead').style.marginTop = '0';
-        document.querySelector('.search-form').style.marginTop = '0';
-        document.querySelector('.search-form').style.marginBottom = '0';
-        document.querySelector('.cart-icon').style.marginBottom = '0';
-        document.querySelector('.profile-icon').style.marginBottom = '0';
-        document.querySelector('.nav-items ul').style.flexDirection = 'row';
-        document.querySelector('.nav-items ul').style.alignItems = 'center';
-        document.querySelector('.cart-items-container').style.margin = '0 auto';
-        document.querySelector('.footer').style.margin = '0 auto';
-    }
-}
-
-// Apply the styles when the page is loaded
-applyMobileStyles();
-
-// Apply the styles when the window is resized
-window.addEventListener('resize', applyMobileStyles);
-
-
-
-
-
     // Get all the product cards
     const productCards = document.getElementsByClassName('product-card');
    // Get the product modal and close button
