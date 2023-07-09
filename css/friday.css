@@ -202,7 +202,7 @@ body {
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .header a {
     float: none;
     display: block;
@@ -211,7 +211,7 @@ body {
   .header-right {
     float: none;
   }
-}
+} */
 
 #login-form, #signup-form {
   width: 30%;
@@ -283,6 +283,7 @@ label, input[type="submit"] {
 
 
 
+
 /* Media queries for laptops and desktops */
 @media (min-width: 768px) {
   /* Align navbar items for laptops and desktops */
@@ -329,5 +330,88 @@ label, input[type="submit"] {
   }
 }
 
+/* Media queries for phones */
+@media (max-width: 767px) {
+  /* Adjust navbar items for phones */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  /* Adjust logohead margin for phones */
+  .logohead {
+    margin-top: 10px;
+  }
 
+  /* Adjust search form for phones */
+  .search-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Adjust cart icon for phones */
+  .cart-icon {
+    margin-bottom: 10px;
+  }
+
+  /* Adjust profile icon for phones */
+  .profile-icon {
+    margin-bottom: 10px;
+  }
+
+  /* Center align navigation items for phones */
+  .nav-items ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Reset cart-items-container alignment for phones */
+  .cart-items-container {
+    margin: 0;
+  }
+
+  /* Reset footer alignment for phones */
+  .footer {
+    margin: 0;
+  }
+}
+
+/* Media queries for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Adjust logohead margin for tablets */
+  .logohead {
+    margin-top: 10px;
+  }
+
+  /* Adjust search form for tablets */
+  .search-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Adjust cart icon for tablets */
+  .cart-icon {
+    margin-bottom: 10px;
+  }
+
+  /* Adjust profile icon for tablets */
+  .profile-icon {
+    margin-bottom: 10px;
+  }
+
+  /* Center align navigation items for tablets */
+  .nav-items ul {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Reset cart-items-container alignment for tablets */
+  .cart-items-container {
+    margin: 0 auto;
+  }
+
+  /* Reset footer alignment for tablets */
+  .footer {
+    margin: 0 auto;
+  }
+}
