@@ -1,0 +1,360 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/friday.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logohead">
+                <a href="homepage.html"><img src="logo/logo.jpeg" alt="Logo"> </a>
+            </div>
+            <form action="#" method="get" class="search-form">
+                <input type="text" id="search-input" placeholder="Search" />
+                <button type="submit" onclick="search()">Search</button>
+            </form>
+
+            <!-- The cart section -->
+            <div class="cart-icon">
+                <i class="fa fa-shopping-cart"></i>
+                <div class="cart-count">0</div>
+            </div>
+            <div class="cart-items">
+                <h2>Your Cart</h2>
+                <p><i>Nothing is added to the cart list</i></p>
+            </div>
+            <div class="profile-icon">
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+
+
+    </header>
+    <nav>
+        <div class="menu-btn">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <div class="sidebar">
+                <!-- content for sidebar goes here -->
+                <a href="cart.html">caps</a>
+                <a href="truckerhat.html">truckerhat</a>
+                <a href="jallabiya.html">throbes</a>
+                <a href="services.html">Services</a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="cart.html">Zanna bukar</a></li>
+            <li><a href="bongol.html">Bongol</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Damanga</button>
+                <div class="dropdown-content">
+                    <a href="atiku.html">Atiku</a>
+                    <a href="bindo.html">Bindo</a>
+                </div>
+            </div>
+            <li><a href="miyaram.html">miyaaram</a></li>
+            <li><a href="kindai.html">Kindai</a></li>
+            <li><a href="tangaran.html">Tangaran</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Daraa</button>
+                <div class="dropdown-content">
+                    <a href="dara.html">Normal</a>
+                    <a href="tonak.html">Tonak</a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <div class="cart-items-container">
+        <div class="cart-items-header">Cart Items</div>
+        <div class="cart-items-list"></div>
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-name"></div>
+            <img class="product-image" src="zannabukar/zannabukar (1).jpeg" alt="Product 1">
+            <div class="product-price">7500</div>
+            <div class="product-size">
+                <label for="size-select"></label>
+                <select id="size-select">
+                    <option value="22">22</option>
+                    <option value="22½">22½</option>
+                    <option value="23">23</option>
+                    <option value="23½">23½</option>
+                    <!-- Add more options as necessary -->
+                </select>
+            </div>
+            <div class="product-description"> 2023 miyaram DESIGN with DMC weave on ST material knit by phenomenal Bama artist </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-name">Product 2</div>
+            <img class="product-image" src="zannabukar/zannabukar (2).jpeg" alt="Product 2">
+            <div class="product-price">8000</div>
+            <div class="product-size">
+                <label for="size-select"></label>
+                <select id="size-select">
+                    <option value="22">22</option>
+                    <option value="22½">22½</option>
+                    <option value="23">23</option>
+                    <option value="23½">23½</option>
+                    <!-- Add more options as necessary -->
+                </select>
+            </div>
+            <div class="product-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis nisi vel blandit faucibus. </div>
+            <button class="add-to-cart-button"> Add to Cart</button>
+        </div>
+        <!--Product 3 -->
+        <div class="product-card">
+            <div class="product-name">Product 3</div>
+            <img class="product-image" src="zannabukar/zannabukar (3).jpeg" alt="Product 3">
+            <div class="product-price">8000</div>
+            <div class="product-size">
+                <label for="size-select"></label>
+                <select id="size-select">
+                    <option value="22">22</option>
+                    <option value="22½">22½</option>
+                    <option value="23">23</option>
+                    <option value="23½">23½</option>
+                    <!-- Add more options as necessary -->
+                </select>
+            </div>
+            <div class="product-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis nisi vel blandit faucibus. </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <!--Product 4 -->
+        <div class="product-card">
+            <div class="product-name">Product 4</div>
+            <img class="product-image" src="zannabukar/zannabukar (4).jpeg" alt="Product 4">
+            <div class="product-price">8000</div>
+            <div class="product-size">
+                <label for="size-select"></label>
+                <select id="size-select">
+                    <option value="22">22</option>
+                    <option value="22½">22½</option>
+                    <option value="23">23</option>
+                    <option value="23½">23½</option>
+                    <!-- Add more options as necessary -->
+                </select>
+            </div>
+            <div class="product-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis nisi vel blandit faucibus. </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <!--Product 5 -->
+        <div class="product-card">
+            <div class="product-name">Product 5</div>
+            <img class="product-image" src="zannabukar/zannabukar (10).jpeg" alt="Product 5">
+            <div class="product-price">6500</div>
+            <div class="product-size">
+                <label for="size-select"></label>
+                <select id="size-select">
+                    <option value="22">22</option>
+                    <option value="22½">22½</option>
+                    <option value="23">23</option>
+                    <option value="23½">23½</option>
+                    <!-- Add more options as necessary -->
+                </select>
+            </div>
+            <div class="product-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis nisi vel blandit faucibus. </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <!--Product 6 -->
+        <div class="product-card">
+            <div class="product-name">Product 6</div>
+            <img class="product-image" src="zannabukar/zannabukar (9).jpeg" alt="Product 6">
+            <div class="product-price">6500</div>
+            <div class="product-size">
+                <label for="size-select"></label>
+                <select id="size-select">
+                    <option value="22">22</option>
+                    <option value="22½">22½</option>
+                    <option value="23">23</option>
+                    <option value="23½">23½</option>
+                    <!-- Add more options as necessary -->
+                </select>
+            </div>
+            <div class="product-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis nisi vel blandit faucibus. </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <!--Product 7 -->
+        <div class="product-card">
+            <div class="product-name">Product 7</div>
+            <img class="product-image" src="zannabukar/zannabukar (8).jpeg" alt="Product 7">
+            <div class="product-price">8000</div>
+            <div class="product-size">
+                <label for="size-select"></label>
+                <select id="size-select">
+                    <option value="22">22</option>
+                    <option value="22½">22½</option>
+                    <option value="23">23</option>
+                    <option value="23½">23½</option>
+                    <!-- Add more options as necessary -->
+                </select>
+            </div>
+            <div class="product-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis nisi vel blandit faucibus. </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <!--Product 8 -->
+        <div class="product-card">
+            <div class="product-name">Product 8</div>
+            <img class="product-image" src="zannabukar/zannabukar (16).jpeg" alt="Product 8">
+            <div class="product-price">6500</div>
+            <div class="product-size">
+                <label for="size-select"></label>
+                <select id="size-select">
+                    <option value="22">22</option>
+                    <option value="22½">22½</option>
+                    <option value="23">23</option>
+                    <option value="23½">23½</option>
+                    <!-- Add more options as necessary -->
+                </select>
+            </div>
+            <div class="product-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis nisi vel blandit faucibus. </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <!--Product 9 -->
+        <div class="product-card">
+            <div class="product-name">Product 9</div>
+            <img class="product-image" src="zannabukar/zannabukar (14).jpeg" alt="Product 9">
+            <div class="product-price">8000</div>
+            <div class="product-size">
+                <label for="size-select"></label>
+                <select id="size-select">
+                    <option value="22">22</option>
+                    <option value="22½">22½</option>
+                    <option value="23">23</option>
+                    <option value="22½">23½</option>
+                    <!-- Add more options as necessary -->
+                </select>
+            </div>
+            <div class="product-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis nisi vel blandit faucibus. </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <!-- Modal -->
+        <div id="product-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-product-name"></h2>
+                <img id="modal-product-image" src="" alt="Product Image">
+                <div id="modal-product-description"></div>
+                <div id="modal-product-price"></div>
+                <div id="modal-product-size">
+                    <label for="modal-size-select"></label>
+                    <select id="modal-size-select">
+                        <option value="22">22</option>
+                        <option value="22½">22½</option>
+                        <option value="23">23</option>
+                        <option value="23½">23½</option>
+                        <!-- Add more options as necessary -->
+                    </select>
+                </div>
+                <button id="add-to-cart-button">Add to Cart</button>
+            </div>
+        </div>
+        <div class="pagination">
+            <a href="cart.html" class="active">1</a>
+            <a href="zanna.html">2</a>
+        </div>
+        <footer class="footer">
+            <div class="footer__addr">
+                <a href="homepage.html" class="logo"><img src="logo/logo.jpeg" alt="Logo"> </a>
+                <!-- <h1>Contact</h1> -->
+                <br>
+                <!-- Modal Trigger -->
+                <a href="#" class="footer__btn" id="phoneNumber">09036069556</a>
+                <a class="footer__btn" href="#" id="addressLink">Ibrahim Dabo Road, Kano, Nigeria</a>
+                <a class="footer__btn" href="#" id="emailUsLink">Email Us</a>
+                <!-- Modal -->
+                <div id="emailModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Contact Us</h2>
+                        <form id="emailForm">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" required>
+                            <label for="message">Message:</label>
+                            <textarea id="message" style="margin-bottom: 10px;" required></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <ul class="footer__nav">
+                <li class="nav__item">
+                    <h1 class="nav__title"><b> PRODUCTS</h1></b>
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="cart.html">caps</a>
+                        </li>
+                        <li>
+                            <a href="jallabiya.html">throbes</a>
+                        </li>
+                        <li>
+                            <a href="truckerhat.html">truckerhat</a>
+                        </li>
+                        <li>
+                            <a href="services.html">services</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <h1 class="nav__title"><b>Footer menu</h1></b>
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="homepage.html">home</a>
+                        </li>
+                        <li>
+                            <a href="cart.html">products</a>
+                        </li>
+                        <li>
+                            <a href="profile.html">account</a>
+                        </li>
+                        <li>
+                            <a href="#cart.html">cart </a>
+                        </li>
+                        <li>
+                            <a href="signup.html">signup</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <h1 class="nav__title"><b> Support</h1></b>
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Help Desk</a>
+                        </li>
+                        <li>
+                            <a href="#">contact us</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.whatsapp.com" class="icon-link" id="whatsapp-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.twitter.com" class="icon-link" id="twitter-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" class="icon-link" id="instagram-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="legal">
+                <p>&copy; blackhat 2023 Copyright.</p>
+            </div>
+        </footer>
+<script src="caps.js"></script>
+    </body>
+</html>
